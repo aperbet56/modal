@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fenêtre modale en JS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="modal__container">
+      <div class="overlay modal__trigger"></div>
+      <div
+        class="modal"
+        role="dialog"
+        aria-labelledby="modalTitle"
+        aria-describedby="dialogDesc"
+      >
+        <button class="close__modal modal__trigger" aria-label="close modal">
+          X
+        </button>
+        <h1 id="modalTitle">Bienvenue</h1>
+        <p id="dialogDesc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam facere,
+          quos amet cupiditate minima dolorum?
+        </p>
+      </div>
+    </div>
+    <button class="modal__btn modal__trigger">Ouvrir la modale</button>
+    <script src="script.js"></script>
+  </body>
+</html>
